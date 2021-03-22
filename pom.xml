@@ -7,8 +7,8 @@
   		<version>2.1.3.RELEASE</version>
   </parent>
   
-  <groupId>br.com.erudio</groupId>
-  <artifactId>rest-with-springboot-udemy</artifactId>
+  <groupId>br.com.testapi</groupId>
+  <artifactId>person-api</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   
@@ -39,6 +39,12 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>     
+        
+        <dependency>
+            <groupId>com.github.dozermapper</groupId>
+            <artifactId>dozer-core</artifactId>
+            <version>6.4.1</version>
+        </dependency>  
                
         <dependency>
           <groupId>junit</groupId>
