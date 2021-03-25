@@ -48,10 +48,17 @@
 			<artifactId>dozer-core</artifactId>
 			<version>6.4.1</version>
 		</dependency>
-
+       
+        <!--support for XML -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+		
+		<!--support for YML -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-yaml</artifactId>
 		</dependency>
 
 
