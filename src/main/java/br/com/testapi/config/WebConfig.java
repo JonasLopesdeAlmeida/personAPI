@@ -25,13 +25,12 @@ public class WebConfig implements WebMvcConfigurer {
 
 		// ### Via EXTENSION EX: .xml .json .x-yaml ###
 		// http://localhost:8080/api/person/v1/.xml
-		 configurer.favorParameter(false) 
-		 .ignoreAcceptHeader(false)
-		 .defaultContentType(MediaType.APPLICATION_JSON)  
-		 .mediaType("json", MediaType.APPLICATION_JSON) 
-		 .mediaType("xml", MediaType.APPLICATION_XML)
-		 .mediaType("x-yaml", MEDIA_TYPE_YML);
-		 
+//		 configurer.favorParameter(false) 
+//		 .ignoreAcceptHeader(false)
+//		 .defaultContentType(MediaType.APPLICATION_JSON)  
+//		 .mediaType("json", MediaType.APPLICATION_JSON) 
+//		 .mediaType("xml", MediaType.APPLICATION_XML)
+//		 .mediaType("x-yaml", MEDIA_TYPE_YML);
 
 		// ### Via QUERY PARAM Ex: ?mediaType=xml ###
 
@@ -45,14 +44,13 @@ public class WebConfig implements WebMvcConfigurer {
 		 */
 
 		// ### Via Header Ex: Accept application/xml or application/json ###
+
 		
-		/*
-		 * configurer .favorParameter(false) .ignoreAcceptHeader(false)
-		 * .useRegisteredExtensionsOnly(false)
-		 * .defaultContentType(MediaType.APPLICATION_JSON) .mediaType("json",
-		 * MediaType.APPLICATION_JSON) .mediaType("xml", MediaType.APPLICATION_XML)
-		 * .mediaType("x-yaml", MEDIA_TYPE_YML);
-		 */
+		   configurer .favorParameter(false) .ignoreAcceptHeader(false)
+		   .useRegisteredExtensionsOnly(false)
+		   .defaultContentType(MediaType.APPLICATION_JSON) .mediaType("json",
+		   MediaType.APPLICATION_JSON) .mediaType("xml", MediaType.APPLICATION_XML)
+		   .mediaType("x-yaml", MEDIA_TYPE_YML);
 		 
 
 	}
